@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Carson</title>
+    <script>
+
+
+         function callAndroidWXLogin(){
+            // 由于对象映射，所以调用test对象等于调用Android映射的对象
+            <!--test.hello("js调用了android中的hello方法");-->
+
+            <!--约定的url协议为：js://webview?-->
+            <!--document.location = "js://webview?arg1=WXLogin";-->
+
+            <!--prompt("js://webview?arg1=WXLogin");-->
+
+            alert("js://webview?arg1=WXLogin")
+
+         }
+
+
+         function callAndroidWXPay(){
+            // 由于对象映射，所以调用test对象等于调用Android映射的对象
+            <!--test.hello("js调用了android中的hello方法");-->
+
+            <!--约定的url协议为：js://webview?-->
+            <!--document.location = "js://webview?arg1=WXPay";-->
+
+            <!--var result=prompt("js://webview?arg1=WXPay");-->
+            <!--alert("demo " + result);-->
+
+            alert("js://webview?arg1=WXPay")
+
+         }
+
+         function callAndroidWXLoginWithPrompt(){
+            // 调用prompt（）
+            var result=prompt("js://webview?arg1=WXLogin");
+            alert("demo " + result);
+         }
+
+         function callAndroidWXPayWithPrompt(){
+            // 调用prompt（）
+            var result=prompt("js://webview?arg1=WXPay");
+            alert("demo " + result);
+         }
+
+         function ResCompleted(result) {
+            alert("demo " + result);
+         }
+
+
+
+
+
+    </script>
+</head>
+<body>
+//点击按钮则调用callAndroid函数
+<button type="button" id="wxlogin" onclick="callAndroidWXLogin()"></button>
+<button type="button" id="wxpay" onclick="callAndroidWXPay()"></button>
+
+<!--<button type="button" id="wxloginwithprompt" onclick="callAndroidWXLoginWithPrompt()"></button>-->
+<!--<button type="button" id="wxpaywithprompt" onclick="callAndroidWXPayWithPrompt()"></button>-->
+
+</body>
+</html>

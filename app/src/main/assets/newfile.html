@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<input>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta charset="UTF-8">
+    <title>fghdf</title>
+    <script type="text/javascript">
+			function wbShare(){
+			  alert('111')
+			  window.android.wbShare("标题","好玩","https://blog.csdn.net/u013144287/article/list/","http://p2pblz7ar.bkt.clouddn.com/152541667562405b9d120-d2d0-4419-9b5a-47c91045a599.jpg")
+			}
+
+			function QQShare() {
+				alert('222')
+				window.android.qqShare("11","22","https://blog.csdn.net/u013144287/article/list/","http://p0w4yb0aj.bkt.clouddn.com/background_my.jpg",0)
+			}
+
+			function _Native_qqShare(result) {
+				alert(result)
+			}
+
+			function _Native_weiboShare(result) {
+				alert(result)
+			}
+
+			function getLanguage() {
+				alert(111)
+				alert(window.android.getLanguage())
+			}
+
+			function speechSynthesizerVoice() {
+				alert(111)
+				window.android.speechSynthesizerVoice('我是小嗨，科大讯飞，让世界聆听您的声音')
+			}
+
+			function _Native_speechComplete(result) {
+				alert(result)
+			}
+
+			function openPage(){
+				window.android.openPage('http://cs.114utrip.com/trainsearch/toTrain.shtml')
+			}
+
+			function position() {
+				alert('111')
+				window.android.getPositioning()
+			}
+
+			function _Native_location(result) {
+				alert(result)
+			}
+
+
+			function setLightStatusBar() {
+				alert('222')
+				window.android.setWStatusBarColor("black")
+			}
+
+			function wbLogin() {
+				alert('111')
+				window.android.wbLogin()
+			}
+
+			function _Native_weiboLogin(result) {
+				alert(JSON.stringify(result))
+			}
+
+			function wbShare() {
+				alert('222')
+				window.android.wbShare('标题','文本','https://blog.csdn.net/u013144287/article/list/','https://avatar.csdn.net/3/1/D/3_u013144287.jpg')
+			}
+
+			function _Native_weiboShare(result) {
+				alert(result)
+			}
+
+			function wxPayClient() {
+				alert('微信支付客户端签名')
+				window.android.wxPayClient("未来生鲜视觉体验", "1415659990", 888)
+			}
+
+			function _Native_weixinPay(result) {
+			   alert("支付结果" + result)
+			}
+		</script>
+</head>
+<body>
+<br>
+<br>
+<br>
+<button onclick="QQShare()">
+    QQ分享
+</button>
+
+<button onclick="wbShare()">
+    微博分享
+</button>
+
+<button onclick="getLanguage()">
+    系统设置语言
+</button>
+
+<button onclick="speechSynthesizerVoice()">
+    文字转语音
+</button>
+<button onclick="openPage()">
+    打开新页面
+</button>
+
+<button onclick="position()">
+    定位
+</button>
+
+
+<button onclick="setLightStatusBar()">
+    设置黑色
+</button>
+
+<button onclick="wbLogin()">
+    微博登录
+</button>
+
+<button onclick="wbShare()">
+    微博分享
+</button>
+
+<button onclick="wxPayClient()">微信支付</button>
+</body>
+</html>
